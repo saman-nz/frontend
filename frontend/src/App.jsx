@@ -11,7 +11,7 @@ import Inventory from './containers/Inventory';
 import { UserProvider } from './containers/UserContext';
 import Login from './containers/Login';
 import Register from './containers/Register';
-import ProtectedRoute from './PrivateRoute';
+import ProtectedRoute from './ProtectedRoute';
 import { AuthProvider } from './containers/AuthContext';
 import Purchase from './containers/Purchase';
 import Supplier from './containers/Supplier';
@@ -70,7 +70,7 @@ const MainContent = ({ toggle, Toggle }) => {
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               <Route element={<ProtectedRoute />}>
-                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/dashboard" element={<Dashboard />}  />
                 <Route path="/customer" element={<Customer />} />
                 <Route path="/sales" element={<Sales />} />
                 <Route path="/inventories" element={<Inventory />} />

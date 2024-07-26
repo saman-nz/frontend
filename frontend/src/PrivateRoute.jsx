@@ -3,6 +3,7 @@ import { Route, Routes, Navigate, Outlet } from 'react-router-dom';
 import { useUser } from './containers/UserContext';
 
 function PrivateRoute({ element, ...rest }) {
+  console.log('fdfd');
   const user = useUser();
 
   // Assuming isAuth is obtained from user authentication context
@@ -15,6 +16,7 @@ function PrivateRoute({ element, ...rest }) {
         {...rest}
         element={
           isAuthenticated ? (
+        
             // Render the component if authenticated
             element
           ) : (

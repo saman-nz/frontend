@@ -4,24 +4,27 @@
   }
   
   .bg-gradient {
-    background: skyblue;
+    background-image: url(../assests/bgblue.jpg)!important;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
  
 .white-box {
-  background-color: #fff;
+  background-color: skyblue;
   color: #000;
 }
 .border-40 {
   border-radius: 40px;
 }
 .blue-box {
-    background: rgb(255 255 255 / 35%);
+    background: rgb(255 255 255 );
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 2px solid rgb(255 255 255);
 }
 .pright{
     padding-right: 10em;
